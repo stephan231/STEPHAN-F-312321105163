@@ -18,8 +18,7 @@ const fetchNumbers = async (numberId) => {
     const response = await axios.get(apiUrls[numberId], {
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4MTc4OTk0LCJpYXQiOjE3MTgxNzg2OTQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjY3OTM2ZDQ4LThlZmMtNGIzMS04ZjAwLTQ4NjEzYWEyMWQzMSIsInN1YiI6ImZyYW5jaXNzdGVwaGFuLjA1QGdtYWlsLmNvbSJ9LCJjb21wYW55TmFtZSI6InN0ZXBoYW4iLCJjbGllbnRJRCI6IjY3OTM2ZDQ4LThlZmMtNGIzMS04ZjAwLTQ4NjEzYWEyMWQzMSIsImNsaWVudFNlY3JldCI6Inl4U21MUHFsUVFmVGNzbUciLCJvd25lck5hbWUiOiJTdGVwaGFuIiwib3duZXJFbWFpbCI6ImZyYW5jaXNzdGVwaGFuLjA1QGdtYWlsLmNvbSIsInJvbGxObyI6IjMxMjMyMTEwNTE2MyJ9.o4_GdLBTRwrKkDfPmTj8WkyPZeKrm8aRgYAmCoqxNPE", // Replace with your actual token
-      },
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4MTc4OTk0LCJpYXQiOjE3MTgxNzg2OTQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjY3OTM2ZDQ4LThlZmMtNGIzMS04ZjAwLTQ4NjEzYWEyMWQzMSIsInN1YiI6ImZyYW5jaXNzdGVwaGFuLjA1QGdtYWlsLmNvbSJ9LCJjb21wYW55TmFtZSI6InN0ZXBoYW4iLCJjbGllbnRJRCI6IjY3OTM2ZDQ4LThlZmMtNGIzMS04ZjAwLTQ4NjEzYWEyMWQzMSIsImNsaWVudFNlY3JldCI6Inl4U21MUHFsUVFmVGNzbUciLCJvd25lck5hbWUiOiJTdGVwaGFuIiwib3duZXJFbWFpbCI6ImZyYW5jaXNzdGVwaGFuLjA1QGdtYWlsLmNvbSIsInJvbGxObyI6IjMxMjMyMTEwNTE2MyJ9.o4_GdLBTRwrKkDfPmTj8WkyPZeKrm8aRgYAmCoqxNPE", 
       timeout: 5000,
     });
     return response.data.numbers;
